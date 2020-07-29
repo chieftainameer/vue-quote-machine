@@ -81,6 +81,9 @@ export default {
     console.log(this.quotes[0]);
     this.selectedQuote = Object.assign({}, this.quotes[1]);
     console.log(this.selectedQuote);
+    setInterval(() => {
+      this.nextQuote();
+    }, 7000);
   },
   methods: {
     nextQuote() {
